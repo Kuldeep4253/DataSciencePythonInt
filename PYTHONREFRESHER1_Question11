@@ -1,0 +1,49 @@
+'''
+
+Q11. Sum of Indices
+
+Problem Description
+
+You are given a list of n integers and m queries, where each query consists of an index. You have to print for each query, the sum of numbers in the list from 0 to ith index for i in a query.
+
+Input Format:
+
+The first line consists of number of queries m
+The next line consists of space separated integers consisting of elements of list
+The next m lines consists of m queries in integer format
+Output Format:
+
+There will be m lines of output where each line consists of sum from 0th index to ith index in a query.
+Sample Input:
+
+2  
+0 1 2 3
+1  
+3
+Sample Output:
+
+1  
+6
+Sample explanation:
+
+For 1st query 1, the sum is 0+1 therefore 1 is printed. For the 2nd query, the sum is 0+1+2+3 therefore 6 is printed.
+
+'''
+
+m = int(input())
+l = list(map(int, input().split(" ")))
+
+#YOUR CODE GOES HERE
+a=[]
+c=[]
+for k in range(0,m):
+    c.append(int(input()))
+for i in range(0,len(c)):
+    sum=0
+    for j in range(0,c[i]+1):
+        sum=sum+l[j]
+    a.append(sum)
+
+for k in range(0,len(a)):
+    print(a[k])
+
