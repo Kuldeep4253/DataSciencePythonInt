@@ -1,2 +1,2 @@
-# DataSciencePythonInt
-This is Data Science and python practice repo.
+# DataSciencePythonIntermediate
+This is Data Science and python intermediate practice repo.
