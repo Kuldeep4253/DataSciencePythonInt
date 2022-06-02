@@ -1,0 +1,40 @@
+'''Question 9 
+Problem Statement:
+Complete the function replace_cube(), which takes a list and a value N as inputs, and updates every element that is in a position which is a multiple of N, with a number that is the cube of the existing number, in the list and returns the newly updated list.
+Note: Here while operating with N, it should be considered that if we say that an element is at index i then its position is (i+1)th. For example, an element at index 1 is actually in the second position.
+Input Format:
+Space separated integers representing the list elements.
+N (integer)
+Output Format:
+A list is simply printed
+Sample Input:
+1 2 3 4 5 
+2
+Sample output:
+1 8 3 64 5
+Sample explanation:
+Since the given value of N is 2, from the list, 2nd and 4th elements would be replaced with their cubes. Hence, 2 becomes 8 ad 4 becomes 64 in the resultant answer.
+'''
+
+
+def replace_cube(arr, N):
+    '''
+    input:
+    arr -> list of the input numbers
+    N -> value of N as mentioned in the question
+    
+    output:
+    res_list -> resultant list formed after doing the required computation as mentioned in the question
+    '''
+    res_list = None
+    # Your code starts here
+    
+    
+    # Your code ends here
+    res_list=[]
+    for i in range(0,len(arr)):
+        if(i!=0 and (i+1)%N==0):
+            res_list.append(arr[i]**3)
+        else:
+            res_list.append(arr[i])
+    return res_list
